@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  captureField(name:string){
+
+    console.log('Input value is ',name);
+  }
+
+  emitValue(e:Event){
+
+    console.log('Your value was ', e.target.value);
+
+  }
 }
